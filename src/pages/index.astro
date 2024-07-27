@@ -1,0 +1,55 @@
+---
+import AboutUs from '../components/AboutUs.astro';
+import FooterSection from '../components/FooterSection.astro';
+import PropertyOption from '../components/PropertyOption.astro';
+import TalkComponent from '../components/TalkComponent.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Four Seasons Homestay | Homestay in tirupati">
+	<div class="hidden lg:block">
+		<section class="min-h-[90vh] bg-banner bg-cover bg-no-repeat">
+			<nav class="flex justify-between items-center px-10 py-10 lg:px-24 lg:h-[20vh]">
+				<a href="/">
+					<img src="/fourSeasonsHomestay.jpeg" alt="Four Seasons Homestay in tirupati" class="w-32 lg:w-56 ">
+				</a>
+				<ul class="hidden lg:flex space-x-4 ">
+					<a href="/">
+						<li class="cursor-pointer text-green-600">HOME</li>
+					</a>
+					<a href="/homestay-tirupati">
+						<li class="cursor-pointer hover:text-green-600">ABOUT</li>
+					</a>
+					<a href="/homestay-tirupati-contact">
+						<li class="cursor-pointer hover:text-green-600">CONTACT</li>
+					</a>
+				</ul>
+			</nav>
+			<div class=" lg:h-[80vh] flex justify-center pt-10">
+				<div class="text-center space-y-6">
+					<div>
+						<h1 class=" text-4xl lg:text-6xl text-green-800 font-medium">FOUR SEASONS HOMESTAY</h1>
+						<p class="text-2xl lg:text-3xl font-thin italic">Embrace every season of comfort</p>
+					</div>
+					<div class="bg-[#74a94b] text-white w-fit mx-auto  cursor-pointer hover:bg-green-900">
+						<a class="h-full w-full py-2 px-12 block" href="/homestay-tirupati">EXPLORE</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="grid grid-cols-1 lg:grid-cols-3 gap-16 px-10 py-10 lg:px-24 lg:py-20">
+			<PropertyOption title='1 BHK Property' body='1' img='/1bhk.jpeg'  />
+			<PropertyOption  title='2 BHK Property'body='2'  img='/2bhk.jpeg' />
+			<PropertyOption title='3 BHK Property' body='3' img='/3bhk.jpeg' />
+		</section>
+		<AboutUs />
+		<TalkComponent />
+		<FooterSection />
+	</div>
+	<div class="lg:hidden flex flex-col gap-5 justify-center items-center h-[100vh]">
+		<p class="font-bold">Four Seasons Homestay</p>
+		<h1>Mobile view under development.<br /> Check in Desktop 💻</h1>
+	</div>
+</Layout>
+
+

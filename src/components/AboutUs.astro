@@ -1,0 +1,20 @@
+---
+const imageNumbers = [1, 3, 4, 5, 8, 9, 10, 11, 12, 13, 20, 22];
+---
+
+<section class="px-24 space-y-4 min-h-[100vh]">
+    <h1 class="text-4xl font-medium tracking-wide">ABOUT US</h1>
+    <p class="leading-2 tracking-wide">
+        Discover the perfect stay at Four Seasons Homestay! Our accommodation offers stylish 1bhk, 2bhk, and 3bhk room with a spacious hall, well-equipped kitchen, dining area, attached bathrooms, bedrooms, and a common balcony. Enjoy the comfort of fully furnished rooms with LED lighting, AC in bedrooms, sofa, dining table, and a fully equipped kitchen with stove.
+    </p>
+    <div class="columns-4 gap-4 space-y-4 py-10">
+            {imageNumbers.map((number) => (
+            <div class="h-min w-full">
+                <img 
+                  src={`/images/${number}.jpeg`} 
+                  alt="homestay tirupati"
+                />
+             </div>
+              ))}
+    </div>
+</section>

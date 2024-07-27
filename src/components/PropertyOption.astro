@@ -1,0 +1,19 @@
+---
+interface Props {
+    img: string;
+	title: string;
+	body: string;
+}
+
+const { img, title, body } = Astro.props;
+---
+
+<div class="space-y-4">
+	<h3 class="text-2xl font-bold text-gray-800">{title}</h3>
+    <p class="text-gray-500 leading-8 text-md ">Our {body}bhk has a spacious hall with sofa, well-equipped kitchen, dining area, {body} attached bathrooms in {body} bedrooms, and a common balcony. Enjoy the comfort of fully furnished rooms with LED lighting, AC in bedrooms, sofa, dining table, and a fully equipped kitchen with stove. Parking facility is available.</p>
+    <div class="h-[240px]">
+        <a href="/homestay-tirupati">
+            <img src={img} alt="homestay in tirupati" class="w-[100%] h-[100%] object-cover">
+        </a>
+    </div>
+</div>

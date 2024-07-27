@@ -1,0 +1,49 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta property="title" content="Four Seasons Homestay | Homestay in tirupati">
+		<meta property="url" content="https://fourseasonshomestay.com/">
+		<meta property="site_name" content="Four Seasons Homestay">
+		<meta name="description" content="Experience a cozy stay at Four Seasons Homestay, your perfect homestay in tirupati. Book now for a memorable stay close to Tirupati." />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="keywords" content="homestay in tirupati, homestays in tirupati, homestay, Four Seasons Homestay, fourseasonshomestay, FOUR SEASONS HOME STAY, Best hotel in tirupati, Best homestay in tirupati, Top quality hotel, Car Rentals in Tirupati, Affordable Hotels in Tirupati, Cabs in Tirupati, Hotels in Tirupati, Places To Visit Near Tirupati, Hotels To Stay in Tirupati, Tourist Places in Tirupati, Budget Hotels in Tirupati, Famous Hotels in Tirupati, Best Places To Visit in Tirupati, Cheap Service Apartments, Tourist Places in Tirumala, Best Hotels in Tirupati, Places to Visit in Tirumala, Book Hotels in Tirpati, Hotels and Serviced Apartments, Hotels and Service Apartments in Tirupati, Hotel Amenities, Service Amenities, Service Apartments For Rent, Fully Furnished Apartments For Rent, Fully Furnished Apartments For Rent, Fully Furnished Apartments For Rent Near Me, Service Apartments in Tirupati, Furnished Apartment, Service Apartment, Furnished Apartments For Rent, Best Serviced Apartments, Cheap Apartments For Rent, Self Service Apartment, Apartments For Rent, Hotel Service Apartment, Hotel Service Apartment and Facilities, homestays near me, homestays in tirupati, homestay near me, best homestay in tirupati">
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "LodgingBusiness",
+			  "name": "Four Seasons Homestay",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "1-25/12, car showroom road, opposite to Tata motors, beside Mango Market Road, Kr Nagar, Srinivasapuram",
+				"addressLocality": "Tirupati",
+				"addressRegion": "Andhra Pradesh",
+				"postalCode": "517503",
+				"addressCountry": "India"
+			  },
+			  "telephone": "090003 74374",
+			  "url": "https://fourseasonshomestay.com",
+			  "description": "Experience a cozy stay at Four Seasons Homestay, a charming homestay in tirupati. Book homestay comfort and convenience close to tirupati.",
+			  "openingHours": "Mo-Su 00:00-24:00",
+			}
+			</script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+
+</style>
