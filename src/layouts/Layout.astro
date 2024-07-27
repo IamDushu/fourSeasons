@@ -6,6 +6,28 @@ interface Props {
 const { title } = Astro.props;
 ---
 
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeMenu = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    const toggleMenu = () => {
+        if (mobileMenu.classList.contains('-translate-x-full')) {
+            mobileMenu.classList.remove('-translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+        } else {
+            mobileMenu.classList.add('-translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+        }
+    };
+
+    hamburgerIcon.addEventListener('click', toggleMenu);
+    closeMenu.addEventListener('click', toggleMenu);
+});
+</script>
+
+
 <!doctype html>
 <html lang="en">
 	<head>

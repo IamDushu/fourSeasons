@@ -6,6 +6,7 @@ import TalkComponent from '../components/TalkComponent.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
+
 <Layout title="Four Seasons Homestay | Homestay in tirupati">
 		<section class="min-h-[100vh] bg-banner bg-cover bg-no-repeat">
 			<nav class="flex justify-between items-center px-10 py-10 lg:px-24 lg:h-[20vh]">
@@ -23,9 +24,29 @@ import Layout from '../layouts/Layout.astro';
 						<li class="cursor-pointer hover:text-green-600">CONTACT</li>
 					</a>
 				</ul>
-				<div class="lg:hidden">
-					
+				<div class="lg:hidden flex items-center">
+					<button id="hamburger-icon" class="text-green-600 focus:outline-none">
+						<!-- Hamburger Icon -->
+						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+						</svg>
+					</button>
 				</div>
+				<div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full backdrop-blur shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out">
+					<div class="flex justify-end p-4">
+						<button id="close-menu" class="text-green-600 focus:outline-none">
+							<!-- Close Icon -->
+							<svg class="w-8 h-8 mr-5 mt-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+							</svg>
+						</button>
+					</div>
+					<ul class="flex flex-col items-center text-xl justify-center h-full space-y-4">
+						<li class="bg-green-800 min-w-[200px]  text-center"><a href="/" class="text-orange-400 block w-[100%] py-5 h-[100%] font-bold">HOME</a></li>
+						<li class="bg-green-800 min-w-[200px]  text-center"><a href="/homestay-tirupati" class="hover:text-green-600 block w-[100%] py-5 h-[100%] text-white font-bold">ABOUT</a></li>
+						<li class="bg-green-800 min-w-[200px]  text-center"><a href="/homestay-tirupati-contact" class="hover:text-green-600 block w-[100%] py-5 h-[100%] text-white font-bold">CONTACT</a></li>
+					</ul>
+				</div>			
 			</nav>
 			<div class=" lg:h-[80vh] flex justify-center pt-10">
 				<div class="text-center space-y-16">
